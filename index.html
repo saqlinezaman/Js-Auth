@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- font awsome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="">
+    <div class="container">
+        <div class="form-box login">
+            <form id="form" >
+                <h1>Register</h1>
+                <!-- user name -->
+                <div class="input-box">
+                    <input id="username" type="text" placeholder="Username" >
+                    <i class="fa-solid fa-user"></i>
+                    <!-- error -->
+                    <span id="nameError"></span>
+                </div>
+                <!-- email -->
+                <div class="input-box">
+                    <input id="email" type="text" placeholder="Email" >
+                    <i class="fa-solid fa-envelope"></i>
+                    <!-- error -->
+                     <span id="emailError"></span>
+                </div>
+                <!-- Password -->
+                  <div class="input-box">
+                    <input id="password" type="text" placeholder="Password"  autocomplete="off">
+                    <i class="fa-solid fa-lock"></i>
+                    <span id="passwordError"></span>
+                </div>
+                <!-- C-Password -->
+                  <div class="input-box">
+                    <input id="confirmPassword" type="text" placeholder="Confirm Password"  autocomplete="off">
+                    <span id="CPasswordError"></span>
+                <!-- forgot link -->
+                <div class="forgot-link">
+                    <a href="" class="">Forgot password</a>
+                </div>
+                <!-- button -->
+                 <button id="btn-submit" class="btn" type="submit">Register</button>
+                 <span style="color: green;" id="registerDone"></span>
+                </form>
+            </div>
+        </div>
+        <div class="toggole-box">
+            <div class="toggle-panel">
+                <h1>
+                    Hi there,<br>
+                    Want To Register?
+                </h1>
+            </div>
+        </div>
+        <!-- js link -->
+         <script src="./script.js"></script>
+    </body>
+</html>
